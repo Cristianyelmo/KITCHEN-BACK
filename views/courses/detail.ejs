@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include('../partials/head',{
+    title: "Agregar Curso"
+}) %>
+
+  <body class="form">
+    <!-- encabezado -->
+    <%- include('../partials/header') %>
+
+      <!-- principal -->
+      <main class="form__main">
+     
+     <h2>Detalle del Curso</h2>
+     <hr>
+     <div class="row">
+        <div class="col-12 col-md-10 mx-auto">
+            <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <div class="d-flex flex-column gap-1">
+                      <img src="/images/courses/<%= image.length? image[0] : 'not-image.png' %>" class="img-fluid rounded-start" alt="...">
+                      <div class="d-flex flex-row justify-content-between  flex-wrap gap-1">
+                        <% image.forEach(images => { %>
+                          <img src="/images/courses/<%= images %>" class="img-fluid" alt="..." width="30%" onclick="document.getElementById('imgMain').setAttribute('src',event.target.src)" style="cursor:pointer">
+                        <% }) %>
+
+
+
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title"><%= title %></h5>
+                      <p class="card-text"><%= description %></p>
+                      <div class="d-flex gap-2">
+                        <a class="btn btn-success" href="/courses/edit/<%= id %>">Editar</a>
+                        <a class="btn btn-danger" href="/courses/remove/<%= id %>">Eliminar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+     </div>
+
+      </main>
+      <!-- pie de pagina -->
+
+      <%- include('../partials/footer') %>
+
+
+        <%- include('../partials/scripts') %>
+
+
+  </body>
+
+</html>

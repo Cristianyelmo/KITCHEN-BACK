@@ -1,0 +1,35 @@
+[
+   
+   {
+      "id": 21,
+      "title": "aaaaaaaa",
+      "price": 30000,
+      "description": "aaa",
+      "image": [
+         "1676894255160_courses_.jpg",
+         "1676894255296_courses_.jpg",
+         "1676894255304_courses_.jpg"
+      ],
+      "chef": "Fabian Mahr",
+      "sale": false,
+      "newest": true,
+      "free": false,
+      "visible": true
+   },
+   {
+      "id": 22,
+      "title": "aaaaaa",
+      "price": 30000,
+      "description": "aaa",
+      "image": [
+         "1676894770449_courses_.jpg",
+         "1676894770721_courses_.jpg",
+         "1676894770928_courses_.jpg"
+      ],
+      "chef": "Hernán Pérez Velásquez",
+      "sale": false,
+      "newest": true,
+      "free": false,
+      "visible": true
+   }
+]
